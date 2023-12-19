@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background: url(bi.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+
+/* first part */
+.bg-dark-purple {
+    background-color: rgba(54, 16, 226, 0.8);
+    height: 70px;
+    display: flex;
+}
+
+.bg-primary-purple {
+    background-color: rgba(78, 56, 255, 0.8);
+}
+.bg-primary-purple a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.bg-primary-purple a:hover{
+    color: rgb(28, 192, 221);
+}
+p {
+    background-image: url('transparent.jpg');
+    /* background-position: center;
+    background-size: cover; */
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    font-weight: bold;
+    /* display: inline-block; */
+    line-height: 1;
+
+    /* color: white; */
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.fixed {
+    top: 20px;
+    left: 10px;
+    position: fixed;
+    z-index: 10;
+}
+
+.shape {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.shape-container {
+    width: 200px;
+    background: transparent;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.parallelogram {
+    width: 100%;
+    left: 20%;
+    top: 23%;
+    background: linear-gradient(to right, #71f371, #e48e8e, #71f371);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.shape .shape-container .parallelogram img {
+    height: 80px;
+}
+
+.shape .shape-container .parallelogram img:hover {
+    visibility: hidden;
+}
+
+@media (max-width: 900px) {
+    .bg-dark-purple {
+        justify-content: center;
+    }
+
+    p {
+        font-size: xx-large;
+        word-spacing: 4px;
+        text-align: right;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 700px) {
+    .bg-dark-purple {
+        justify-content: center;
+    }
+
+    p {
+        font-size: 30px;
+        word-spacing: 4px;
+        text-align: right;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 650px) {
+    .bg-dark-purple {
+        justify-content: flex-end;
+    }
+    .shape .shape-container .parallelogram {
+        display: none;
+    }
+}
+/* for simulating */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#delayedText {
+    animation: fadeIn 1s ease-in-out;
+}
+.fixed2{
+    height: 8000px; 
+    width: 200px; 
+    /* border: 1px solid black;  */
+    position: fixed;
+    top: 135px;
+    background-color: whitesmoke;
+}
+/* .fixed3{
+    position: relative;
+    z-index: -10;
+} */
+.fixed4{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.btn{
+    border-radius: 0px;
+    text-decoration: none;
+}
+.btn:hover{
+    color: rgb(28, 192, 221);
+    text-decoration: none;
+}
+
+.btn-color {
+    color: white;
+}
+
+.fixed2 .fixed3 a{
+    text-decoration: none;
+    text-align: left;
+    margin-right: 15px;
+    display: block; 
+    color: black;
+}
+
+.span {
+    display: inline;
+    color: blue;
+    cursor: pointer;
+}
+
+.fixed2 .fixed3 a:hover .span {
+    color: rgb(28, 192, 221);
+}
+hr{
+    border: 1px solid blue;
+    z-index: -10;
+    position: relative;
+}
+
+.containerr{
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    background-color: white;
+}
+.contentt{
+    display: none;
+    position: absolute;
+    padding: 0px;
+    min-width: 200%;
+    box-shadow: 0px 0px 1px 0px white;
+    z-index: 1000;
+    background-color: white;
+}
+.containerr:hover .contentt{
+    display: inline;
+    margin-left: 17px;
+    z-index: 1000;
+    background-color: white;
+    top: 0px;
+}
+.cardd{
+    border-radius: 0px;
+    margin: 0px;
+    padding: 20px;
+    height: 50px;
+    z-index: 0;
+    border: 1px solid #f1e3e3;
+    /* overflow: hidden; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cardd-body{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cardd-title {
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cardd:hover{
+    box-sizing: border-box;
+    box-shadow: -0px 3px 10px rgb(120, 113, 113);
+    transition: .3s;
+}
+
+
+
+/* Second part */
+.shapee{
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px black;
+    background-color: white;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.h1{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+form{
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px black;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(244, 249, 249);
+}
+.row{
+    margin: 5px;
+    padding: 5px;
+}
+.container{
+    padding: 10px;
+}
+input{
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+span{
+    color: red;
+    font-size: 18px;
+}
+button{
+    border: none;
+}
+.btnn{
+    background-image: url(button.jpg);
+    text-align: center;
+    text-transform: uppercase;
+    /* transition: 0.1s; */
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+   
+}
+.btnn:hover{
+    background-image: url(nbutton.jpg);
+    transition: .5s;
+    color: #fff;
+    text-decoration: none;
+}
+.fixed4 .row .col a{
+    text-decoration: none;
+    color: fuchsia;
+}
+.fixed4 .row .col a:hover{
+    color: purple
+}
